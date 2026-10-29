@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#101a30" />
+  <meta name="description" content="Kubernetes 입문부터 CKA 준비까지, 강의·문제은행·모의고사·오답노트" />
+  <title>KubeStep | 나만의 CKA 학습실</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard"><span class="brand-icon">⬡</span><span>Kube<span class="brand-accent">Step</span><small>CKA STUDY LAB</small></span></a>
+      <div class="sidebar-label">WORKSPACE</div>
+      <nav id="nav" aria-label="주 메뉴">
+        <a href="#dashboard" data-page="dashboard"><span>◫</span> 대시보드</a>
+        <a href="#learn" data-page="learn"><span>▤</span> 개념 학습</a>
+        <a href="#practice" data-page="practice"><span>◇</span> 문제은행</a>
+        <a href="#exam" data-page="exam"><span>◷</span> 모의고사</a>
+        <a href="#review" data-page="review"><span>↻</span> 오답 노트</a>
+        <a href="#manage" data-page="manage"><span>＋</span> 콘텐츠 관리</a>
+      </nav>
+      <div class="sidebar-bottom"><div class="online-dot"></div><div>개인 학습 모드<small>브라우저에 자동 저장</small></div></div>
+    </aside>
+    <div class="main-area">
+      <header class="topbar"><button id="menu-toggle" aria-label="메뉴 열기">☰</button><div id="breadcrumb">내 학습실 <span>/ 대시보드</span></div><div class="top-right"><span class="pill">CKA · 입문 코스</span><span class="avatar">K</span></div></header>
+      <main id="content" tabindex="-1"></main>
+      <footer class="footer">KubeStep · 개인용 학습 MVP · 실제 CKA 시험 환경 및 공식 문제와는 별개입니다.</footer>
+    </div>
+  </div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
